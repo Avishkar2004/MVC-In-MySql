@@ -24,7 +24,6 @@ async function handleDeleteUserById(req, res) {
     return res.status(500).json({ error: "Internal Server Error" });
   }
 }
-
 async function handlegetUserById(req, res) {
   try {
     const db = req.app.locals.db;
@@ -88,7 +87,7 @@ async function handleCreatenewUser(req, res) {
 module.exports = {
   handleGetAllUser,
   handleCreatenewUser,
-  handleDeleteUserById,
   handlegetUserById,
+  handleDeleteUserById,
   handleUpdateById,
 };
